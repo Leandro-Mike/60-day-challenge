@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/backgroun-random-color.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 150px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12px;
+
+  width: 80%px;
+  height: auto;
+
+  position: relative;
+}
+
+[class^="tarjeta-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 250px;
+  height: 270px;
+
+  background-color: #efefef;
+
+  border-radius: 10px;
+
+  box-shadow: 8px 8px 24px -14px rgba(66, 68, 90, 1);
+}
+
+[class^="color-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  height: 90%;
+}
+
+.tarjeta-5 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: rotate(-25deg);
+}
+
+#boton-color {
+  width: 500px;
+  height: 50px;
+
+  cursor: pointer;
+
+  background-color: #efefef;
+  border: none;
+  border-radius: 30px;
+
+  box-shadow: 8px 8px 24px -14px rgba(66, 68, 90, 1);
+
+  margin-top: 20px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#boton-color:hover {
+  background-color: #121835;
+  border: solid 1px #efefef;
+
+  color: #efefef;
+
+  transition: 0.2s;
+}
+
+.color-tarjeta-1 {
+  background-color: #f20587;
+}
+.color-tarjeta-2 {
+  background-color: #2e038c;
+}
+.color-tarjeta-3 {
+  background-color: #f2b705;
+}
+.color-tarjeta-4 {
+  background-color: #f28705;
+}
+.color-tarjeta-5 {
+  background-color: #bf3604;
+}
