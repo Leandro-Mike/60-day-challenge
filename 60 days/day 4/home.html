@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />    
+<title>Day 4</title>
+  </head>
+  <body>
+    <div class="contenedor animate__animated animate__fadeInUp animate__delay-0.5s">
+      <script
+        src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+        type="module"
+      ></script>
+      <dotlottie-player id="lottieAnim"
+        src="https://lottie.host/7852601b-22f0-417e-87fd-bcf66b5c448f/M7LSsM01W4.lottie"
+        background="transparent"
+        speed="3"
+        style="width: 150px; height: 150px; margin-bottom: 15px;"
+        loop="false"
+    
+        
+      ></dotlottie-player>
+
+      <div class="conversores">
+        <div class="conversores--entrada">
+          <input type="number" name="monto" id="monto" value="1" />
+          <select name="entradaMoneda" id="entradaMoneda">
+            <option value="ARS">ARS</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+
+        <div class="conversores--salida">
+          <h4 id="resultado">0</h4>
+          <select name=salidaMoneda" id="salidaMoneda">
+              <option value="USD">USD</option>
+            <option value="ARS">ARS</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+
+        <button id="convertir" onclick="convertirMoneda()">CONVERTIR</button>
+
+        <p id="copia">2USD es igual a 1500 ARS</p>
+      </div>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+  </body>
+</html>
